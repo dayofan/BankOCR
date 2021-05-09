@@ -17,6 +17,10 @@ namespace BankOcrKata
     _  _     _  _  _  _  _ 
   | _| _||_| _ |_   ||_||_|
   ||_  _|  | _||_|  ||_| _ ", "1234?678? ILL")]
+        [TestCase(@"
+    _  _     _  _  _  _  _ 
+  | _| _||_||_ |_   ||_||_|
+  ||_  _|  | _||_|  ||_||_|", "123456788 ERR")] // new test case
         public void Tests(string input, string expectedResult)
         {
             // Arrange
